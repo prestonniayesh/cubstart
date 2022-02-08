@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <!-- BEGIN PART 1 -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Preston Niayesh</title>
+  <!-- END PART 1 -->
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    <!-- BEGIN PART 2 -->
+    <h3>
+      <a href="/">PN</a>
+    </h3>
+    <!-- END PART 2 -->
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <!-- BEGIN PART 5 -->
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <!-- 
+        5.1: What does this button tag correspond to on the site? 
+
+        The lightmode versus darkmode button on the website with the moon.
+      
+      -->
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- 
+        5.2: Try Ctrl-F in styles.css and look the class 'nav__hamburger'. You'll notice that it
+        appears in 2 places. Why is one of the rules 'display: none' on one instance? How do you
+        make it so that this button appears on screen? 
+        Hint: remember what @media (max-width: 600px) means.
+
+        It's display none on one instance because our screen is wider than 600 pixels. However, if
+        we reduce the screen size to less than 600 pixels, the nav bar pops up.
+
+       -->
+
+      <!-- END PART 5 -->
+    </nav>
+  </header>
+
+  <main>
+    <div class="about center">
+      <!-- BEGIN PART 6 -->
+      <h1>Hi, I'm <span class="about__name">Preston Niayesh</span>.</h1>
+      <!-- BEGIN PART 13.1 -->
+      <img src="mew.png"/>
+      <!-- END PART 13.1 -->
+      <h2 class="about__role">Electrical Engineering and Computer Science @ UC Berkeley</h2>
+      <p class="about__desc">Hello! I am currently a full stack engineer looking to break into 
+        quantitative finance. Feel free to contact me! :)
+      </p>
+      <!-- END PART 6 -->
+      <div class="about__contact center">
+        <a href="resume.pdf">
+          <span class="btn btn--outline">Resume</span>
+        </a>
+
+        <a href="https://github.com/prestonniayesh" aria-label="github" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/pniayesh" aria-label="linkedin" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+
+        <!-- BEGIN PART 13.2 -->
+        <a href="https://www.instagram.com/impresston/?hl=en" aria-label="instagram" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-instagram"></i>
+        </a>
+        <!-- END PART 13.2 -->
+      </div>
+    </div>
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__grid">
+        <!-- BEGIN PART 8 -->
+        <!-- BEGIN PART 13.3 -->
+        <div class="project">
+          <h3>Itinerary to Calendar Converter</h3>
+          <p class="project__description">
+            ● Designed a program using Python and JavaScript to add every event in an itinerary 
+            on Google Docs to Google Calendar 
+            <br>
+            ● Created Python functions to parse dates and events in the itinerary into a spreadsheet 
+            <br>
+            ● Integrated the Google Sheets API and Google Apps Script to transfer these events to Google Calendar
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">JavaScript</li>
+          </ul>
+
+          <a href="https://github.com/prestonniayesh/Itinerary-to-Calendar-Converter" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="project">
+          <h3>Minecraft Server Backup and Restore</h3>
+          <p class="project__description">
+            ● Built a Java program to backup current progress on any Minecraft: 
+            Java Edition server as well as restore backup data
+            <br>
+            ● Backup includes an info file with the time and information about the backup 
+            including an optional message by the player
+            <br>
+            ● First program ever created on Mac for backing up and restoring Minecraft: Java 
+            Edition server data
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+          </ul>
+
+          <a href="https://github.com/prestonniayesh/Minecraft-Server-Backup-Restore" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="project">
+          <h3>Gitlet</h3>
+          <p class="project__description">
+            ● Implemented a custom version-control in Java that supports the main 
+            functionalities of Git
+            <br>
+            ● Created data structures such as blobs, trees, and commits to store data 
+            with SHA1 Hashing
+            <br>
+            ● Supports: init, add, commit, rm, log, global-log, find, status, checkout, branch, checkout, branch, rm-branch, reset, merge
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <!-- END PART 13.3 -->
+        <!-- END PART 8 -->
+      </div>
+    </section>
+
+
+    <section class="section skills" id="skills">
+      <!-- BEGIN PART 10 -->
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">HTML</li>
+        <li class="skills__list-item btn btn--plain">CSS</li>
+        <li class="skills__list-item btn btn--plain">JavaScript</li>
+      </ul>
+      <!-- END PART 10 -->
+    </section>
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:pniayesh@berkeley.edu">
+        <span class="btn btn--outline">Email me</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- BEGIN PART 12 -->
+    <a href="/" class="link footer__link">
+      Created By Preston Niayesh.<br>All rights reserved.
+    </a>
+    <!-- END PART 12 -->
+  </footer>
+
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
